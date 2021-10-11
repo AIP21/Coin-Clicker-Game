@@ -112,7 +112,7 @@ public class SaveLoad : MonoBehaviour
                 double secondsPassed = diffTime.TotalSeconds;
                 if (secondsPassed >= 600)
                 {
-                    double coinsGained = secondsPassed * ((Manager.coinsPerSecond + Manager.coinLevel) / 100);
+                    double coinsGained = secondsPassed * ((Manager.coinsPerSecond + Manager.coinLevel) / 50);
                     coinsGained = Math.Round(coinsGained);
 
                     // Show away screen
