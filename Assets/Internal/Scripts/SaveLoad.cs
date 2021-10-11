@@ -110,7 +110,7 @@ public class SaveLoad : MonoBehaviour
                 DateTime logoffTime = DateTime.FromBinary(Convert.ToInt64(PlayerPrefs.GetString("logoffTime")));
                 TimeSpan diffTime = currTime.Subtract(logoffTime);
                 double secondsPassed = diffTime.TotalSeconds;
-                if (secondsPassed >= 600)
+                if (secondsPassed >= 300)
                 {
                     double coinsGained = secondsPassed * ((Manager.coinsPerSecond + Manager.coinLevel) / 50);
                     coinsGained = Math.Round(coinsGained);
